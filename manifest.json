@@ -1,0 +1,17 @@
+{
+  "name": "POPKID AI",
+  "short_name": "POPKID",
+  "description": "Powerful AI Assistant powered by Popkid",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#07090f",
+  "theme_color": "#07090f",
+  "icons": [
+    {
+      "src": "https://api.yupra.my.id/api/ai/copilot?text=icon512",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
