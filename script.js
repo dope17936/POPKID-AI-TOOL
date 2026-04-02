@@ -115,8 +115,8 @@ async function sendMessage(text) {
 
   } catch (err) {
     if (document.getElementById('typing-wrap')) typingEl.remove();
-    showToast('⚠️ Error connecting to popkid API');
-    console.error('POPKID API error:', err);
+    showToast('⚠️ Error connecting to kervens API');
+    console.error('KERVENS API error:', err);
   }
 
   isStreaming = false;
@@ -134,7 +134,7 @@ function appendBubble(role, content, doScroll = true) {
   av.className = `avatar ${role === 'user' ? 'u' : 'a'}`;
   av.textContent = role === 'user' ? 'You' : '🤖';
   const name = document.createElement('span');
-  name.textContent = role === 'user' ? 'You' : 'POPKID AI';
+  name.textContent = role === 'user' ? 'You' : 'KERVENS AI';
 
   if (role === 'user') { meta.appendChild(name); meta.appendChild(av); }
   else { meta.appendChild(av); meta.appendChild(name); }
@@ -172,7 +172,7 @@ function showTyping() {
   wrap.className = 'msg-wrap ai'; wrap.id = 'typing-wrap';
   const meta = document.createElement('div'); meta.className = 'msg-meta';
   const av = document.createElement('div'); av.className = 'avatar a'; av.textContent = '🤖';
-  const name = document.createElement('span'); name.textContent = 'POPKID AI';
+  const name = document.createElement('span'); name.textContent = 'KERVENS AI';
   meta.appendChild(av); meta.appendChild(name);
   const bubble = document.createElement('div');
   bubble.className = 'bubble typing-bubble';
